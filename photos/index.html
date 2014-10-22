@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for photo in site.data.images %}
-<img class="grid" src={{photo.src | prepend: "/public/images/" }} alt={{photo.src}}>
+<img class="grid" src={{photo.src | prepend: "/public/images/" | prepend: {{site.baseurl}} alt={{photo.src}}>
 {% endfor %}
   <!--
     <img data-src=”img/2.jpg” src=”” alt=”Use data-src for on-demand loading”>
