@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div id=slider>
+  {% for photo in site.data.images %}
+  <img src={{photo.src | prepend: "/public/images/" }} alt={{photo.src}}>
+  {% endfor %}
+  <!--
+    <img data-src=”img/2.jpg” src=”” alt=”Use data-src for on-demand loading”>
+    <img data-src=”img/3.jpg” data-src-2x=”img/3@2x.jpg” src=”” alt=”Use data-src-2x for HiDPI devices”>
+  -->
+</div>
