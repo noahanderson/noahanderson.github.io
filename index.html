@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+<h1>Hello,</h1>
+
+<p>
+my name is Noah Anderson. I was born in Tacoma, WA and raised in many
+places around the world including Washington, Germany, Italy, and now Colorado.
+I was inspired to be an actor in the 6th grade and did my first play in the 7th
+grade. Since then I have performed in several plays and musicals, auditioned and
+got into a performing arts high school as a major in Theatre, worked
+professionally on stage and camera, achieved the critics choice of a main stage
+performance at the State and National Conference levels, and have been accepted
+into several Theatre/Acting programs across the nation. I aspire to act and
+perform because not only do I believe that it can most definitely effect and
+change the world, but it also makes me happy. Performing entails excitement,
+adrenaline, experience and connection all of which I strive for in my every day
+life. I believe that through my craft and artistry I can make a difference.
+Main Picture is Fall Shot.
+
+Others are Performance Photos
+</p>
+<div id=slider>
+  {% for photo in site.data.images %}
+    <img src={{photo.src | prepend: "public/images/" }} alt={{photo.src}}>
+  {% endfor %}
+  <!--
+    <img data-src=”img/2.jpg” src=”” alt=”Use data-src for on-demand loading”>
+    <img data-src=”img/3.jpg” data-src-2x=”img/3@2x.jpg” src=”” alt=”Use data-src-2x for HiDPI devices”>
+  -->
+</div>
