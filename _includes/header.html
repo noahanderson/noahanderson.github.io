@@ -1,0 +1,8 @@
+<!-- Navigation is off for now. I don't want to style it. :D -->
+<nav>
+  {% for page in site.pages %}
+    {% if page.title %}
+      <a href="{{page.url | prepend: site.baseurl}}">{{page.title}}</a>
+    {% endif %}
+  {% endfor %}
+</nav>

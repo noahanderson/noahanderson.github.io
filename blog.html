@@ -1,0 +1,20 @@
+---
+title: Blog
+layout: default
+---
+
+<div class="home">
+	{% for post in site.posts %}
+		<div class="post-teaser">
+			<a class="title post-link" href="{{ post.url | prepend: site.baseurl }}">
+				<h1>
+					{{ post.title }}
+				</h1>
+			</a>
+			{{ post.excerpt }}
+			<a class="post-link read" href="{{ post.url | prepend: site.baseurl }}">
+				read
+			</a>
+		</div>
+	{% endfor %}
+</div>

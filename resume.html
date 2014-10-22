@@ -1,0 +1,25 @@
+---
+layout: page
+---
+<div class="resume">
+	<div class="skills">
+		<h1>Skills</h1>
+		<hr>
+		<p>{{ site.data.skills | array_to_sentence_string }}</p>
+	</div>
+
+	<div class="work">
+		<h1>History</h1>
+		<hr>
+		{% for job in site.data.work %}
+			<div class="job">
+				<h2>{{job.employer}}</h2>
+				<p>{{job.start}} - {{job.end}}</p>
+				<h3>Achievements</h3>
+				<p>{{job.achievements}}</p>
+				<h3>Responsibilities</h3>
+				<p>{{job.responsibilities}}</p>
+			</div>
+		{% endfor %}
+	</div>
+</div>

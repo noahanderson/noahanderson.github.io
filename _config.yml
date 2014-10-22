@@ -1,0 +1,26 @@
+# Site settings
+title: Noah Anderson
+email: dragosaur97@gmail.com
+description: "TODO."
+baseurl: ""
+url: "theghostin.me"
+twitter_username: legittalon
+github_username: legittalon
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# highlighter: pygments
+
+sass:
+  sass_dir: _sass
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "" # all
+      type: "posts"
+    values:
+      layout: "posts"

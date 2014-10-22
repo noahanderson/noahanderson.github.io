@@ -1,0 +1,91 @@
+---
+---
+
+@import "syntax-highlighting"
+
+$fs-xl: 2em
+$fs: 1.2em
+$fs-xs: .8em
+
+h1
+  font-size: $fs-xl
+  margin: 0
+
+.job
+  h3
+    padding-left: .5em
+  p
+    padding-left: 1.3em
+
+hr
+  height: 1px
+  border-style: none
+  background: #ddd
+
+pre
+  width: 100%
+  overflow: scroll
+
+a
+  color: black
+  text-decoration: underline
+
+a.link-verb
+  font-weight: bold
+  display: block
+  font-size: $fs-xl
+  margin-left: .4em
+
+a.title
+  text-decoration: none
+
+a.read
+  float: right
+  text-decoration: none
+
+html, body
+  margin: 0
+  padding: 0
+  font-size: $fs
+
+.site-icon
+  position: fixed
+  bottom: $fs
+  right: $fs
+
+.elusive
+  transition: all .5s
+  -webkit-transform: translateZ(0)
+.elusive:hover
+  transition: all .5s
+  -webkit-transform: rotate(12deg)
+  -moz-transform:    rotate(12deg)
+  -ms-transform:     rotate(12deg)
+  -o-transform:      rotate(12deg)
+  transform:         rotate(12deg)
+
+footer
+  font-size: $fs-xs
+  padding: $fs
+  margin-top: $fs
+  position: fixed
+  bottom: -100%
+
+.post-teaser
+  margin-bottom: $fs-xl
+
+.wrap-content
+  max-width: 100%
+  padding: $fs
+  margin: 0 auto
+
+@media screen and (min-width:930px)
+  .wrap-content
+    max-width: 70%
+
+  .site-icon
+    top: $fs
+    left: $fs
+
+.inline
+  display: inline
